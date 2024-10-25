@@ -1,0 +1,934 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  height: 6.25rem;
+  background: #02a28f;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin-left: 12.25rem;
+  font-size: 1.84rem;
+  font-weight: 700;
+}
+
+/*------------------------------------Main----------------------------------------*/
+main {
+  padding: 1.25rem 6.25rem;
+  display: flex;
+  height: 31.25rem;
+  gap: 5rem;
+}
+.texte-img {
+  background-image: url(./img/predio.jpeg);
+  width: 62.5rem;
+  height: 28.12rem;
+  border-radius: 0.62rem;
+  position: relative;
+  box-shadow: 0rem 0.62rem 0.62rem 0rem #0000001a;
+}
+
+#texto {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 1.25rem;
+  color: white;
+  margin: 0 0 1.25rem 1.25rem;
+}
+
+#texto h1 {
+  font-size: 3.12rem;
+  font-weight: 600;
+}
+
+#texto h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.post-populares {
+  background-color: #02a28f;
+  width: 34.37rem;
+  height: 6.25rem;
+  color: #fff;
+
+  font-size: 1.87rem;
+  font-weight: 700;
+  border-radius: 0.62rem;
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0rem 0.62rem 0.62rem 0rem #0000001a;
+}
+
+.post-populares > p {
+  margin-left: 1.87rem;
+}
+
+.popular {
+  height: 5.62rem;
+  background: #ffffff;
+  margin: 1.56rem 0;
+  border-radius: 0.62rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.62rem;
+
+  box-shadow: 0rem 0.62rem 0.62rem 0rem #0000001a;
+}
+
+.popular-texto {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.19rem;
+}
+
+.popular-texto > h3 {
+  margin-left: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.popular-texto > p {
+  font-size: 1.25rem;
+  margin-left: 1.25rem;
+  margin-top: 0.31rem;
+}
+
+/*------------------------Footer-------------------------------*/
+
+footer {
+  padding: 0 6.25rem;
+  display: flex;
+  gap: 5rem;
+  height: 70rem;
+}
+
+.grid-itens {
+  border-radius: 0.62rem;
+  box-shadow: 0rem 0.62rem 0.62rem 0rem #0000001a;
+}
+
+.grid-itens img {
+  width: 30.6rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.grid-itens h2,
+p {
+  padding: 0 0.62rem 0.62rem;
+}
+
+.postagem {
+  width: 62.5rem;
+  height: 5rem;
+  background-color: #02a28f;
+  color: #fff;
+  border-radius: 0.62rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem 0 1.25rem;
+  margin-bottom: 0.93rem;
+  box-shadow: 0rem 0.62rem 0.62rem 0rem #0000001a;
+}
+
+.postagem h2 {
+  font-size: 2.5rem;
+}
+
+.postagem p {
+  font-size: 1.25rem;
+}
+
+.categoria-div {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid black;*/
+  width: 34.4rem;
+  height: 25rem;
+}
+
+.postagem-texto {
+  width: 62.5rem;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.texto-postar {
+  color: #02a28f;
+}
+
+#categoria-id {
+  background-color: #02a28f;
+  color: #fff;
+  width: 34rem;
+  height: 5rem;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.25rem;
+  box-shadow: 0rem 0.62rem 0.62rem 0rem #0000001a;
+  font-size: 1.25rem;
+}
+#categoria-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h4 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  font-size: 1.56rem;
+  font-weight: 600;
+}
+
+#testando {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-----------------------------------Final-----------------*/
+
+.final {
+  width: 100%;
+  height: 5rem;
+  color: white;
+  background: #02a28f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+}
+
+/*-----------------------@media-------------------------------------*/
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  header {
+    width: 90rem;
+    height: 4.37rem;
+    background-color: #02a28f;
+  }
+
+  header h1 {
+    font-size: 2.25rem;
+    margin-left: 9.37rem;
+  }
+
+  /*-----------------man---------------------------*/
+  main {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    height: 25rem;
+    margin: 1.25rem 0;
+  }
+  .texte-img {
+    background-image: url(./img/predio.jpeg);
+    width: 46.5rem;
+    height: 24.75rem;
+  }
+
+  #texto h1 {
+    font-size: 1.62rem;
+    font-weight: 500;
+  }
+
+  .section-post {
+    width: 22.56rem;
+    height: 24.75rem;
+  }
+
+  .post-populares {
+    width: 22.56rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+
+  .popular {
+    width: 22.56rem;
+    height: 6rem;
+    margin: 1.25rem 0 0;
+  }
+
+  .popular-texto h3 {
+    font-size: 1rem;
+  }
+
+  .popular-texto p {
+    font-size: 0.87rem;
+  }
+
+  /*--------------------------------footer---------------------------*/
+
+  footer {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .postagem {
+    width: 46.5rem;
+    height: 3.5rem;
+  }
+  .postagem a {
+    color: white;
+  }
+
+  .postagem h2 {
+    font-size: 1.25rem;
+  }
+
+  .categoria-div {
+    width: 22.5rem;
+    height: 11.5rem;
+  }
+
+  #categoria-id {
+    width: 22.5rem;
+    height: 3rem;
+  }
+
+  #categoria-id h2 {
+    font-size: 1.25rem;
+  }
+
+  #categoria-item h4 {
+    font-size: 1rem;
+    margin-top: 0.93rem;
+  }
+  .postagem-texto {
+    width: 0;
+  }
+
+  .grid-itens {
+    width: 22.5rem;
+  }
+  .grid-itens img {
+    width: 22.5rem;
+  }
+
+  .grid-itens h2 {
+    font-size: 1.25rem;
+  }
+
+  .grid-itens p {
+    font-size: 0.87rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    width: 64rem;
+    height: 4.37rem;
+    background-color: #02a28f;
+  }
+
+  header h1 {
+    font-size: 2.25rem;
+    margin-left: 9.37rem;
+  }
+
+  /*-----------------man---------------------------*/
+  main {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    height: 25rem;
+    margin: 1.25rem 0;
+  }
+  .texte-img {
+    background-image: url(./img/predio.jpeg);
+    width: 37.5rem;
+    height: 24.75rem;
+  }
+
+  #texto h1 {
+    font-size: 1.62rem;
+    font-weight: 500;
+  }
+
+  .section-post {
+    width: 22.56rem;
+    height: 24.75rem;
+  }
+
+  .post-populares {
+    width: 22.56rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+
+  .popular {
+    width: 22.56rem;
+    height: 6rem;
+    margin: 1.25rem 0 0;
+  }
+
+  .popular-texto h3 {
+    font-size: 1rem;
+  }
+
+  .popular-texto p {
+    font-size: 0.87rem;
+  }
+
+  /*--------------------------------footer---------------------------*/
+
+  footer {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .postagem {
+    width: 37.5rem;
+    height: 3.5rem;
+  }
+  .postagem a {
+    color: white;
+  }
+
+  .postagem h2 {
+    font-size: 1.25rem;
+  }
+
+  .categoria-div {
+    width: 22.5rem;
+    height: 11.5rem;
+  }
+
+  #categoria-id {
+    width: 22.5rem;
+    height: 3rem;
+  }
+
+  #categoria-id h2 {
+    font-size: 1.25rem;
+  }
+
+  #categoria-item h4 {
+    font-size: 1rem;
+    margin-top: 0.93rem;
+  }
+  .postagem-texto {
+    width: 0;
+  }
+
+  .grid-itens {
+    width: 18.12rem;
+  }
+  .grid-itens img {
+    width: 18.12rem;
+  }
+
+  .grid-itens h2 {
+    font-size: 1.25rem;
+  }
+
+  .grid-itens p {
+    font-size: 0.87rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 48rem;
+    height: 4.4rem;
+    background-color: #02a28f;
+  }
+
+  header h1 {
+    font-size: 2.25rem;
+    margin-left: 9.4rem;
+  }
+
+  /*-----------------man---------------------------*/
+  main {
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    gap: 2.5rem;
+    height: 25rem;
+    margin: 1.25rem 0;
+  }
+  .texte-img {
+    background-image: url(./img/predio.jpeg);
+    width: 26.56rem;
+    height: 24.43rem;
+  }
+
+  #texto h1 {
+    font-size: 1.62rem;
+    font-weight: 500;
+  }
+
+  .section-post {
+    width: 18.75rem;
+    height: 24.75rem;
+  }
+
+  .post-populares {
+    width: 18.75rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+
+  .popular {
+    width: 18.75rem;
+    height: 5.87rem;
+    margin: 1.25rem 0 0;
+  }
+
+  .popular-texto h3 {
+    font-size: 0.81rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.87rem;
+  }
+
+  .popular-texto p {
+    font-size: 0.87rem;
+  }
+
+  /*--------------------------------footer---------------------------*/
+
+  footer {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .postagem {
+    width: 26.56rem;
+    height: 3.5rem;
+  }
+  .postagem a {
+    color: white;
+  }
+
+  .postagem h2 {
+    font-size: 1.25rem;
+  }
+
+  .categoria-div {
+    width: 18.75rem;
+    height: 11.5rem;
+  }
+
+  #categoria-id {
+    width: 18.75rem;
+    height: 3rem;
+  }
+
+  #categoria-id h2 {
+    font-size: 1.25rem;
+  }
+
+  #categoria-item h4 {
+    font-size: 1rem;
+    margin-top: 0.93rem;
+  }
+  .postagem-texto {
+    width: 0;
+  }
+
+  .grid-itens {
+    width: 12.5rem;
+  }
+  .grid-itens img {
+    width: 12.5rem;
+  }
+
+  .grid-itens h2 {
+    font-size: 1.25rem;
+  }
+
+  .grid-itens p {
+    font-size: 0.87rem;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    width: 26.56rem;
+    height: 4.37rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  /*-------------------------------man---------------------------------*/
+  main {
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    height: 46.25rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+  }
+
+  .texte-img {
+    background-image: url(./img/predio.jpeg);
+    width: 23rem;
+    height: 24.75rem;
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem auto;
+  }
+
+  #texto h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  /*.section-post {
+    display: none;
+  }*/
+
+  .section-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -118.75rem;
+    left: 1.87rem;
+    width: 22.87rem;
+  }
+
+  .popular {
+    margin: 0.93rem 0 0;
+    width: 22.87rem;
+  }
+
+  .post-populares {
+    width: 22.87rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .popular-texto h3 {
+    font-size: 0.87rem;
+  }
+
+  .popular-texto p {
+    font-size: 0.75rem;
+  }
+  /*-----------------------------------footer---------------------------*/
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    gap: 0;
+
+    position: relative;
+  }
+
+  #testando {
+    width: 23rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .postagem {
+    width: 22.87rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .postagem h2 {
+    font-size: 1.25rem;
+  }
+  .postagem a {
+    font-size: 0.87rem;
+
+    color: white;
+  }
+
+  .postagem-texto {
+    width: 23rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-itens {
+    width: 23rem;
+  }
+
+  .grid-itens img {
+    width: 23rem;
+  }
+
+  .categoria-div {
+    width: 23rem;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -60.93rem;
+    left: 1.87rem;
+  }
+
+  #categoria-id {
+    width: 23rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #categoria-id h2 {
+    font-size: 1.25rem;
+  }
+
+  #categoria-item {
+    width: 22.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .postagem-texto {
+    background-color: white;
+  }
+
+  /*-----------------------Final----------------*/
+  section {
+    width: 24rem;
+  }
+
+  .final {
+    font-size: 0.87rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: -165.31rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    width: 23.43rem;
+    height: 4.37rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  /*-------------------------------man---------------------------------*/
+  main {
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    width: 23.43rem;
+    height: 43.25rem;
+    margin-bottom: -1.25rem;
+    position: relative;
+  }
+
+  .texte-img {
+    background-image: url(./img/predio.jpeg);
+    width: 21rem;
+    height: 24.75rem;
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem auto;
+  }
+
+  #texto h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  /*.section-post {
+    display: none;
+  }*/
+
+  .section-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -109.75rem;
+    left: 0.8rem;
+    width: 23rem;
+  }
+
+  .popular {
+    margin: 0.93rem 0 0;
+    width: 22rem;
+  }
+
+  .post-populares {
+    width: 22rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .post-populares p {
+    margin: 0.62rem 0 0 0;
+  }
+
+  .popular-texto h3 {
+    font-size: 0.87rem;
+  }
+
+  .popular-texto p {
+    font-size: 0.75rem;
+  }
+  /*-----------------------------------footer---------------------------*/
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    gap: 0;
+
+    position: relative;
+  }
+
+  #testando {
+    width: 23rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .postagem {
+    width: 21rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .postagem h2 {
+    font-size: 1rem;
+  }
+  .postagem a {
+    font-size: 0.8rem;
+
+    color: white;
+  }
+
+  .postagem-texto {
+    width: 23rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-itens {
+    width: 21rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .grid-itens img {
+    width: 21rem;
+  }
+
+  .categoria-div {
+    width: 22rem;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -54.93rem;
+    left: 0.85rem;
+  }
+
+  #categoria-id {
+    width: 22rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  #categoria-id h2 {
+    font-size: 1rem;
+  }
+
+  #categoria-item {
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .postagem-texto {
+    background-color: white;
+  }
+
+  /*-----------------------Final----------------*/
+  section {
+    width: 24rem;
+  }
+
+  .final {
+    font-size: 0.87rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: -146.31rem;
+    width: 23.43rem;
+  }
+}
